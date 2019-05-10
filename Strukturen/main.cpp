@@ -16,6 +16,8 @@ struct Person
 	bool brille;
 };
 
+
+// Funktion zur Ausgabe der Personendaten in der Konsole
 void AusgabePersonenDaten(Person person)
 {
 	cout << "Id:\t\t" << person.id << endl;
@@ -27,7 +29,6 @@ void AusgabePersonenDaten(Person person)
 	cout << "Brille:\t\t" << person.brille << endl;
 	cout << endl;
 }
-
 
 
 int main()
