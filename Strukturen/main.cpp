@@ -7,38 +7,63 @@ using namespace std;
 
 struct Person
 {
-	string Vorname;
-	string Nachname;
-	char Geschlecht;
-	int Alter;
-	float Groesse;
-	bool Brille;
-
+	int id;
+	string vorname;
+	string nachname;
+	char geschlecht;
+	int alter;
+	float groesse;
+	bool brille;
 };
+
+void AusgabePersonenDaten(Person person)
+{
+	cout << "Id:\t\t" << person.id << endl;
+	cout << "Vorname:\t" << person.vorname << endl;
+	cout << "Nachname:\t" << person.nachname << endl;
+	cout << "Geschlecht:\t" << person.geschlecht << endl;
+	cout << "Alter:\t\t" << person.alter << endl;
+	cout << "Groesse:\t" << person.groesse << endl;
+	cout << "Brille:\t\t" << person.brille << endl;
+	cout << endl;
+
+}
+
 
 
 int main()
 {
 	cout << "Programm zu Strukturen" << endl << endl;
 
-	Person Person1;
 
-	Person1.Vorname = "Daniel";
-	Person1.Nachname = "Schmunkamp";
-	Person1.Geschlecht = 'm';
-	Person1.Alter = 32;
-	Person1.Groesse = 1.83;
-	Person1.Brille = false;
+	// Verwendung der Struktur 
 
+	// Definition von 2 Variablen mit eigenen Datentyp "Person"
+	
+	Person person1;
+	Person person2;
 
-	cout << Person1.Vorname << endl;
-	cout << Person1.Nachname << endl;
-	cout << Person1.Geschlecht << endl;
-	cout << Person1.Alter << endl;
-	cout << Person1.Groesse << endl;
-	cout << Person1.Brille << endl;
+	// Zuweisung von Werten an die Attribute der Variable
 
+	person1.id = 1001;
+	person1.vorname = "Max";
+	person1.nachname = "Mustermann";
+	person1.geschlecht = 'm';
+	person1.alter = 32;
+	person1.groesse = 1.83;
+	person1.brille = false;
 
+	person2.id = 1002;
+	person2.vorname = "Maxine";
+	person2.nachname = "Musterfrau";
+	person2.geschlecht = 'w';
+	person2.alter = 29;
+	person2.groesse = 1.75;
+	person2.brille = true;
+
+	// Ausgabe der Personendaten in die Konsole
+	AusgabePersonenDaten(person1);
+	AusgabePersonenDaten(person2);
 
 	system("pause");
 	return 0;
