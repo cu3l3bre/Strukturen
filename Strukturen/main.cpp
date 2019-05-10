@@ -26,7 +26,6 @@ void AusgabePersonenDaten(Person person)
 	cout << "Groesse:\t" << person.groesse << endl;
 	cout << "Brille:\t\t" << person.brille << endl;
 	cout << endl;
-
 }
 
 
